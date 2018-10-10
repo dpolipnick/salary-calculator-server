@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salary Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/ogs.css" />
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+</head>
+<body>
+    <h1>Salary Calculator</h1>
+    <section>
+        <h2>Create an Employee</h2>
+        <form>
+            <label for="Employee First Name">Employee First Name:</label>
+            <input id="fName" type="text" placeholder="First Name"/>
+            <label for="Employee Last Name">Employee Last Name:</label>
+            <input id="lName" type="text" placeholder="Last Name"/>
+            <label for="ID Number">ID Number:</label>
+            <input id="idNumber" type="number" placeholder="ID #"/>
+            <label for="Job Title">Job Title:</label>
+            <input id="jobTitle" type="text" placeholder="Job Title"/>
+            <label for="Annual Salary">Annual Salary:</label>
+            <input id="annualSalary" type="number" placeholder="Annual Salary"/>
+            <button id="addButton">Add Employee</button>
+        </form>
+    </section>
+    <section>
+        <h2>Current Staff</h2>
+        <p>View this chart below to see employees in your company.</p>
+        <ul id="chart"></ul>
+    </section>
+    <section>
+        <h2>Annual Payroll:</h2>
+        <div id="payroll">
+            <h3>$0</h3>
+        </div>
+    </section>
+</body>
+</html>
